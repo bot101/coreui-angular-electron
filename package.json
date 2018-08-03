@@ -2,6 +2,7 @@
   "name": "@coreui/coreui-free-angular-admin-template",
   "version": "2.0.0-rc.1",
   "description": "CoreUI Free Angular 2+ Admin Template",
+  "main": "main.js",
   "author": {
     "name": "Łukasz Holeczek",
     "url": "http://holeczek.pl",
@@ -23,7 +24,9 @@
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "electron": "electron .",
+    "electron-build": "ng build --prod && electron ."
   },
   "private": true,
   "dependencies": {
@@ -44,6 +47,7 @@
     "core-js": "^2.5.7",
     "flag-icon-css": "^3.0.0",
     "font-awesome": "^4.7.0",
+    "g": "^2.0.1",
     "moment": "^2.22.2",
     "mutationobserver-shim": "^0.3.2",
     "ng2-charts": "^1.6.0",
@@ -62,8 +66,9 @@
     "@angular/language-service": "^6.0.5",
     "@types/jasmine": "^2.8.8",
     "@types/jasminewd2": "^2.0.3",
-    "@types/node": "^10.3.4",
+    "@types/node": "^10.5.0",
     "codelyzer": "^4.3.0",
+    "electron": "^2.0.6",
     "jasmine-core": "^3.1.0",
     "jasmine-spec-reporter": "^4.2.1",
     "karma": "^2.0.3",
